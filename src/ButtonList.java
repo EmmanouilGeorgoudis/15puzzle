@@ -8,8 +8,10 @@ public class ButtonList {
 
 
     private final List<JButton> buttons = new ArrayList<>();
-    private final List<String> displayNumbers = new ArrayList<>(Arrays.asList("1", "2", "3", "4",
+    private final List<String> correctOrder = new ArrayList<>(Arrays.asList("1", "2", "3", "4",
             "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", ""));
+    private final List<String> displayNumbers = new ArrayList<>(correctOrder);
+
 
     public ButtonList() {
         for (int i = 0; i < 16; i++) {

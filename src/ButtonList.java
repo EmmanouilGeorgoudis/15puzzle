@@ -92,7 +92,7 @@ public class ButtonList {
     public boolean isComplete() {
 
         for (int i = 0; i < buttons.size(); i++) {
-            if (!buttons.get(i).getText().equals(displayNumbers.get(i))) {
+            if (!buttons.get(i).getText().equals(correctOrder.get(i))) {
                 return false;
             }
         }

@@ -19,6 +19,7 @@ public class GameWindow extends JFrame implements ActionListener {
 
         for (JButton b : buttons) {
             b.addActionListener(this);
+            b.setFont(new Font("Arial", Font.BOLD, 20));
             gamePanel.add(b);
         }
 

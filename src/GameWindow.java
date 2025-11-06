@@ -25,6 +25,7 @@ public class GameWindow extends JFrame implements ActionListener {
 
         JLabel timer = new JLabel("");
         resetButton = new JButton("Nytt spel");
+        resetButton.setFont(new Font("Times New Roman", Font.BOLD,20));
         resetButton.addActionListener(this);
 
         controlPanel.add(timer);

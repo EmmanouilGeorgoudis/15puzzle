@@ -32,7 +32,7 @@ public class ButtonList {
         }
     }
 
-    public boolean hasEmptyNearby(JButton pressedButton, List<JButton> buttons) {
+    private boolean hasEmptyNearby(JButton pressedButton, List<JButton> buttons) {
 
         int indexOfPressedButton = buttons.indexOf(pressedButton);
 

@@ -12,7 +12,7 @@ public class GameWindow extends JFrame implements ActionListener {
     boolean justReset = false;
 
     public GameWindow() {
-        this.setTitle("15-Puzzle?");
+        this.setTitle("15-Puzzle");
 
         JPanel gamePanel = new JPanel(new GridLayout(4, 4));
         JPanel controlPanel = new JPanel();

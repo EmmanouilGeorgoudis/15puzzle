@@ -16,7 +16,7 @@ public class ButtonList {
     public ButtonList() {
         for (int i = 0; i < 16; i++) {
             JButton b = new JButton(displayNumbers.get(i));
-            b.putClientProperty("name", "b" + (i + 1));
+//            b.putClientProperty("name", "b" + (i + 1));
             buttons.add(b);
         }
     }

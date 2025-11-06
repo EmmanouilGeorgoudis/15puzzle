@@ -12,7 +12,7 @@ public class GameWindow extends JFrame implements ActionListener {
     boolean justReset = false;
 
     public GameWindow() {
-        this.setTitle("Namn?");
+        this.setTitle("15-Puzzle?");
 
         JPanel gamePanel = new JPanel(new GridLayout(4, 4));
         JPanel controlPanel = new JPanel();
@@ -46,6 +46,9 @@ public class GameWindow extends JFrame implements ActionListener {
         if (source == resetButton) {
             buttonList.randomizer();
             justReset = true;
+            return;
+        } else if (justReset) {
+            justReset = false;
         }
 
         for (int i = 0; i < buttons.size(); i++) {

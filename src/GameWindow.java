@@ -60,7 +60,7 @@ public class GameWindow extends JFrame implements ActionListener {
         }
 
         if (!justReset && buttonList.isComplete()) {
-            JOptionPane.showMessageDialog(this, "Perkele Satana!");
+            JOptionPane.showMessageDialog(this, "Grattis, du vann!");
         }
 
     }

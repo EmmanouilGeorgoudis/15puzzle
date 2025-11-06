@@ -25,7 +25,7 @@ public class GameWindow extends JFrame implements ActionListener {
 
         JLabel timer = new JLabel("");
         resetButton = new JButton("Nytt spel");
-        resetButton.setFont(new Font("Times New Roman", Font.BOLD,20));
+        resetButton.setFont(new Font("Arial", Font.BOLD,20));
         resetButton.addActionListener(this);
 
         controlPanel.add(timer);
@@ -60,7 +60,7 @@ public class GameWindow extends JFrame implements ActionListener {
         }
 
         if (!justReset && buttonList.isComplete()) {
-            JOptionPane.showMessageDialog(this, "Perkele Satana!");
+            JOptionPane.showMessageDialog(this, "Grattis, du vann!");
         }
 
     }
